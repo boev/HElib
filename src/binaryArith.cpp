@@ -415,6 +415,7 @@ void AddDAG::markAsAvailable(DAGnode* node)
 void packedRecrypt(const CtPtrs& a, const CtPtrs& b,
                    std::vector<zzX>* unpackSlotEncoding)
 {
+	return;
   const Ctxt* ct = b.ptr2nonNull(); // find some non-null Ctxt
   if (ct==nullptr) ct = a.ptr2nonNull();
   if (ct==nullptr) return;    // nothing to do
